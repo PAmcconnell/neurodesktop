@@ -231,6 +231,7 @@ RUN /opt/conda/bin/pip install nipype matplotlib datalad-container datalad-osf o
 RUN /opt/conda/bin/pip install jupyter-server-proxy \
     && /opt/conda/bin/jupyter labextension disable @jupyterlab/apputils-extension:announcements \ 
     && /opt/conda/bin/pip install jupyterlmod \ 
+    && /opt/conda/bin/pip install jupyter-matlab-proxy \ 
     && /opt/conda/bin/pip install jupyterlab-git \
     && rm -rf /home/${NB_USER}/.cache
 
